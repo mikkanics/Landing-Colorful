@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@200;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    font-weight: 400;
+}
+
+/* Section 1 - Header */
+header {
+    overflow: auto; /*to fix float (1) */
+}
+
+/* alternative option to fix float (2)*/
+/* header::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.nav-brand {
+    background-color: #0572CB;
+    width: 40%;
+    float: left;
+    padding: 2em;
+}
+
+.nav-brand h1 {
+    color: #fff;
+    font-weight: 600px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+nav {
+    width: 60%;
+    float: left;
+    margin-top: 1.5em;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    padding: 1em;
+    line-height: 32px;
+}
+
+nav li:last-child{
+    margin-left: 2em;
+}
+
+nav li a {
+    font-size: 1.2em;
+    color: #939598;
+    font-weight: 600; 
+}
+
+.log-in {
+    color: #0572CB;
+}
+
+/* Sub-section 2.1 - Banner */
+.banner {
+    background-color: #FD4A35;
+    color: #fff;
+    width: 90%;
+    margin: 4em auto;
+    height: 700px;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    width: 50%;
+}
+
+.banner-text h2 {
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.banner-text p {
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.btn {
+    padding: 1em 2em;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.banner-text button {
+    margin-top: 1em;
+    background-color: #fff;
+}
+
+/* Sub-section 2.2 - About */
+.about {
+    width: 90%;
+    margin: 4em auto;
+    overflow: auto;
+}
+
+.about-content {
+    background-color: #ffce2b;
+    width: 49%;
+    height: 500px;
+    position: relative;
+    float: left;
+    margin-right: 2%;
+}
+
+.about-text {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: justify;
+}
+
+.about-text h2 {
+    font-size: 2em;
+}
+
+.about-img {
+    width: 49%;
+    float: left;
+}
+
+.about-img img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Sub-section 2.3 - Feedback */
+.ads {
+    background-color: #0572CB;
+    overflow: auto;
+}
+
+.ads-header {
+    color: #fff;
+    width: 90%;
+    margin: 4em auto;
+    text-align: center;
+}
+
+.ads-header h2 {
+    font-size: 2em;
+}
+
+.ads-section {
+    margin: 2em auto;
+    width: 75%;
+    overflow: auto;
+}
+
+.ads-col {
+    width: 24.25%;
+    color: #fff;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    padding: 4em;
+    /* background-color: #fff; */
+}
+
+.ads-section:hover {
+    color: rgba(255, 255, 255, .7);
+}
+
+
+.ads-col:not(:last-child) {
+    margin-right: 1%;
+}
+
+.ads-col i {
+    font-size: 5em;
+}
+
+.ads-col p {
+    margin-top: 1em;
+}
+
+/* Sub-section 2.4 - Schedule */
+.schedule {
+    margin: 4em auto;
+    width: 90%;
+}
+
+.schedule-header {
+    overflow: auto;
+}
+
+.header-title {
+    width: 60%;
+    float: left;
+}
+
+.header-title h2 {
+    font-size: 2em;
+    color: #FD4A35;
+}
+
+.header-button {
+    width: 40%;
+    float: left;
+    text-align: right;
+    
+}
+
+.header-button button {
+    background-color: #FD4A35;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    margin-top: 4em;
+}
+
+table,
+td,
+th {
+    border: 4px solid #FD4A35;
+    border-collapse: collapse;
+    padding: 2em;
+}
+
+th {
+    background-color: #FD4A35;
+    color: #fff;
+}
+
+tr:nth-child(2) th{
+    background-color: #FE6654;
+}
+
+/*  */
+
+.teachers {
+    width: 90%;
+    margin: 4em auto;
+}
+
+.teachers-title {
+    width: 60%;
+}
+
+.teachers-title h2 {
+    color: #ffce2b;
+    font-size: 2em;
+}
+
+.teachers-content {
+    margin-top: 4em;
+    overflow: auto;
+}
+
+.profile {
+    width: 24.25%;
+    background-color: #ffce2b;
+    border: 6px solid #ffce2b;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.profile:nth-child(4),
+.profile:nth-child(8) {
+    margin-right: 0;
+}
+
+
+.profile img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.profile-text {
+    padding: 1em;
+}
+
+.contact {
+    height: 700px;
+    overflow: auto;
+}
+
+.contact-map {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #0572CB;
+    padding: 2em 4em;
+}
+
+.contact-form  * {
+    color: #fff;
+}
+.contact-form h3 {
+    margin-top: 2em;
+}
+
+.row {
+    overflow: auto;
+    margin-top: 2em;
+}
+
+.row .form-control {
+    float: left;
+    width: 49%;
+    margin-right: 1%;
+}
+
+.form-control {
+    margin-top: 1em;
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea,
+.form-control select {
+   display: inline-block;
+   width: 100%;
+}
+
+.form-control input,
+.form-control textarea,
+.form-control select{
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+.form-control input[type="checkbox"]{
+    float: left;
+    width: 20%;
+}
+
+.contact button {
+    margin-top: 2em;
+    color: #0572CB;
+}
+
+footer {
+    background-color: #FE6654;
+    padding: 2em;
+}
+
